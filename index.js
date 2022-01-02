@@ -21,6 +21,6 @@ app.use(cors());
 app.use("/server/auth", authRoute);
 app.use("/server/users", userRoute);
 
-app.listen(8800, () => {
+app.listen(process.env.PORT || 8800, () => {
     console.log("Backend server is running!");
 });
